@@ -17,9 +17,10 @@ public class DataBaseTest {
 
             System.out.println("✅ Conectado ao banco com sucesso!");
 
-            ResultSet rs = stmt.executeQuery("SELECT * FROM clientes");
+            ResultSet rs = stmt.executeQuery("SELECT * FROM funcionario");
             while (rs.next()) {
-                System.out.println("Clientes: \n" + rs.getString("id_cliente") + " | " + rs.getString("nome") + " | " + rs.getString("email"));
+                System.out.println("Funcionarios: \n" + rs.getString("id_funcionario") + " | " + rs.getString("nome") + " | " + 
+            rs.getString("cpf") + " | " + rs.getString("data_nascimento") + " | " + rs.getString("salario_bruto") );
             }
 
         } catch (Exception e) {
