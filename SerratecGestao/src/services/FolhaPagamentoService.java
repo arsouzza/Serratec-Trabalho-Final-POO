@@ -12,10 +12,10 @@ public class FolhaPagamentoService {
 
     private CalculoInssService inssService = new CalculoInssService();
     private CalculoIrService irService = new CalculoIrService();
-    private FolhaPagamentoDAO folhaRepository;
+    private FolhaPagamentoDAO folhaPagamentoDAO;
 
     public FolhaPagamentoService(FolhaPagamentoDAO folhaRepository) {
-        this.folhaRepository = folhaRepository;
+        this.folhaPagamentoDAO = folhaRepository;
     }
 
     public FolhaPagamento processar(Funcionario f) {
@@ -34,7 +34,7 @@ public class FolhaPagamentoService {
     }
 
     public void salvarFolha(FolhaPagamento folha) throws Exception {
-        folhaRepository.salvar(folha);
+    	folhaPagamentoDAO.salvar(folha);
     }
 
     private double round2(double v) {

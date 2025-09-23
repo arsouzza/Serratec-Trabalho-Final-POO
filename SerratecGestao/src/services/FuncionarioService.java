@@ -8,14 +8,14 @@ import Daos.FuncionarioDAO;
 
 public class FuncionarioService {
 
-	private FuncionarioDAO repository;
+	private FuncionarioDAO funcionarioDAO;
 
-	public FuncionarioService(FuncionarioDAO repository) {
-		this.repository = repository;
+	public FuncionarioService(FuncionarioDAO funcionarioDAO) {
+		this.funcionarioDAO = funcionarioDAO;
 	}
 
 	public boolean validarCpfUnico(String cpf) throws SQLException {
-		return repository.buscarPorCpf(cpf) == null;
+		return funcionarioDAO.buscarPorCpf(cpf) == null;
 	}
 
 	public boolean validarFormatoCpf(String cpf) {
@@ -29,6 +29,6 @@ public class FuncionarioService {
 		if (!validarCpfUnico(f.getCpf())) {
 			throw new IllegalArgumentException("CPF já cadastrado: " + f.getCpf());
 		}
-		repository.salvar(f);
+		funcionarioDAO.salvar(f);
 	}
 }

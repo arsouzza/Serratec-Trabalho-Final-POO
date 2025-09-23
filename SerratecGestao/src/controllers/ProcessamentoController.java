@@ -21,13 +21,13 @@ import Daos.FuncionarioDAO;
 
 public class ProcessamentoController {
 
-	private FuncionarioDAO funcionarioRepo = new FuncionarioDAO();
-	private DependenteDAO dependenteRepo = new DependenteDAO();
-	private FolhaPagamentoDAO folhaRepo = new FolhaPagamentoDAO();
+	private FuncionarioDAO funcionarioDAO = new FuncionarioDAO();
+	private DependenteDAO dependenteDAO = new DependenteDAO();
+	private FolhaPagamentoDAO folhaDAO = new FolhaPagamentoDAO();
 
-	private FuncionarioService funcionarioService = new FuncionarioService(funcionarioRepo);
-	private DependenteService dependenteService = new DependenteService(dependenteRepo);
-	private FolhaPagamentoService folhaService = new FolhaPagamentoService(folhaRepo);
+	private FuncionarioService funcionarioService = new FuncionarioService(funcionarioDAO);
+	private DependenteService dependenteService = new DependenteService(dependenteDAO);
+	private FolhaPagamentoService folhaService = new FolhaPagamentoService(folhaDAO);
 
 	private CsvReader csvReader = new CsvReader();
 	private CsvWriter csvWriter = new CsvWriter();
@@ -50,12 +50,12 @@ public class ProcessamentoController {
 					linhasRejeitadas.add("FUNCIONARIO;CPF_DUPLICADO;" + f.getNome() + ";" + f.getCpf());
 					continue;
 				}
-				funcionarioRepo.salvar(f);
+				funcionarioDAO.salvar(f);
 
 				for (Dependente d : f.getDependentes()) {
 					try {
 						dependenteService.validarDependente(d);
-						dependenteRepo.salvar(d, f.getId());
+						dependenteDAO.salvar(d, f.getId());
 					} catch (DependenteException | SQLException ex) {
 						linhasRejeitadas
 								.add("DEPENDENTE;REJEITADO;" + d.getNome() + ";" + d.getCpf() + ";" + ex.getMessage());
@@ -63,7 +63,7 @@ public class ProcessamentoController {
 				}
 
 				FolhaPagamento folha = folhaService.processar(f);
-				folhaRepo.salvar(folha);
+				folhaDAO.salvar(folha);
 				folhasGeradas.add(folha);
 
 			} catch (SQLException ex) {
