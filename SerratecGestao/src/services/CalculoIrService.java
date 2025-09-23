@@ -1,6 +1,8 @@
 package services;
 
-public class CalculoIrService {
+import interfaces.ICalculoIrService;
+
+public class CalculoIrService implements ICalculoIrService{
     private static final double DEDUCAO_DEPENDENTE = 189.59;
 
     public double calcularIr(double salarioBruto, double descontoInss, int qtdDependentes) {

@@ -2,18 +2,19 @@ package services;
 
 import models.FolhaPagamento;
 import models.Funcionario;
-import repositories.FolhaPagamentoRepository;
 
 import java.time.LocalDate;
 import java.util.UUID;
+
+import Daos.FolhaPagamentoDAO;
 
 public class FolhaPagamentoService {
 
     private CalculoInssService inssService = new CalculoInssService();
     private CalculoIrService irService = new CalculoIrService();
-    private FolhaPagamentoRepository folhaRepository;
+    private FolhaPagamentoDAO folhaRepository;
 
-    public FolhaPagamentoService(FolhaPagamentoRepository folhaRepository) {
+    public FolhaPagamentoService(FolhaPagamentoDAO folhaRepository) {
         this.folhaRepository = folhaRepository;
     }
 

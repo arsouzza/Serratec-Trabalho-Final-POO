@@ -1,15 +1,16 @@
 package services;
 
 import models.Funcionario;
-import repositories.FuncionarioRepository;
 
 import java.sql.SQLException;
 
+import Daos.FuncionarioDAO;
+
 public class FuncionarioService {
 
-	private FuncionarioRepository repository;
+	private FuncionarioDAO repository;
 
-	public FuncionarioService(FuncionarioRepository repository) {
+	public FuncionarioService(FuncionarioDAO repository) {
 		this.repository = repository;
 	}
 

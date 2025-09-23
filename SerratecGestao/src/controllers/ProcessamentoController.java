@@ -4,9 +4,6 @@ import models.Dependente;
 import models.FolhaPagamento;
 import models.Funcionario;
 import models.exceptions.DependenteException;
-import repositories.DependenteRepository;
-import repositories.FolhaPagamentoRepository;
-import repositories.FuncionarioRepository;
 import services.DependenteService;
 import services.FolhaPagamentoService;
 import services.FuncionarioService;
@@ -18,11 +15,15 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import Daos.DependenteDAO;
+import Daos.FolhaPagamentoDAO;
+import Daos.FuncionarioDAO;
+
 public class ProcessamentoController {
 
-	private FuncionarioRepository funcionarioRepo = new FuncionarioRepository();
-	private DependenteRepository dependenteRepo = new DependenteRepository();
-	private FolhaPagamentoRepository folhaRepo = new FolhaPagamentoRepository();
+	private FuncionarioDAO funcionarioRepo = new FuncionarioDAO();
+	private DependenteDAO dependenteRepo = new DependenteDAO();
+	private FolhaPagamentoDAO folhaRepo = new FolhaPagamentoDAO();
 
 	private FuncionarioService funcionarioService = new FuncionarioService(funcionarioRepo);
 	private DependenteService dependenteService = new DependenteService(dependenteRepo);

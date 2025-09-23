@@ -1,13 +1,13 @@
-package repositories;
+package Daos;
 
 import configs.DatabaseConfig;
+import interfaces.IFuncionarioDAO;
 import models.Funcionario;
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FuncionarioRepository {
+public class FuncionarioDAO implements IFuncionarioDAO {
 
 	public void salvar(Funcionario f) throws SQLException {
 		String sql = "INSERT INTO funcionario(nome, cpf, data_nascimento, salario_bruto) VALUES (?, ?, ?, ?) RETURNING id";

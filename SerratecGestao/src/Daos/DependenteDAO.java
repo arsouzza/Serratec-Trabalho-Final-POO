@@ -1,11 +1,12 @@
-package repositories;
+package Daos;
 
 import configs.DatabaseConfig;
+import interfaces.IDependenteDAO;
 import models.Dependente;
 
 import java.sql.*;
 
-public class DependenteRepository {
+public class DependenteDAO implements IDependenteDAO {
 
 	public void salvar(Dependente d, int funcionarioId) throws SQLException {
 		String sql = "INSERT INTO dependente(nome, cpf, data_nascimento, parentesco, funcionario_id) VALUES (?, ?, ?, ?, ?) RETURNING id";

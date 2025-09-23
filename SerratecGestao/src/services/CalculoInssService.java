@@ -1,6 +1,8 @@
 package services;
 
-public class CalculoInssService {
+import interfaces.ICalculoInssService;
+
+public class CalculoInssService implements ICalculoInssService {
 
     public double calcularInss(double salarioBruto) {
         if (salarioBruto <= 1518.00) {

@@ -1,6 +1,7 @@
-package repositories;
+package Daos;
 
 import configs.DatabaseConfig;
+import interfaces.IFolhaPagamentoDAO;
 import models.FolhaPagamento;
 
 import java.sql.Connection;
@@ -8,7 +9,7 @@ import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class FolhaPagamentoRepository {
+public class FolhaPagamentoDAO implements IFolhaPagamentoDAO {
 
 	public void salvar(FolhaPagamento f) throws SQLException {
 		String sql = "INSERT INTO folha_pagamento(funcionario_id, data_pagamento, desconto_inss, desconto_ir, salario_liquido, codigo) VALUES (?, ?, ?, ?, ?, ?) RETURNING id";

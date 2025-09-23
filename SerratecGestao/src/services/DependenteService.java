@@ -2,15 +2,17 @@ package services;
 
 import models.Dependente;
 import models.exceptions.DependenteException;
-import repositories.DependenteRepository;
 
 import java.sql.SQLException;
 
-public class DependenteService {
+import Daos.DependenteDAO;
+import interfaces.IDependenteService;
 
-    private DependenteRepository repository;
+public class DependenteService implements IDependenteService{
 
-    public DependenteService(DependenteRepository repository) {
+    private DependenteDAO repository;
+
+    public DependenteService(DependenteDAO repository) {
         this.repository = repository;
     }
 
