@@ -1232,7 +1232,7 @@
     <tags>View</tags>
     <tags>categoryTag:Mylyn</tags>
   </descriptors>
-  <descriptors xmi:id="_zWRhoJXBEfC_R_L1UfxOlw" elementId="org.eclipse.mylyn.commons.repositories.ui.navigator.Repositories" label="Team Repositories" iconURI="platform:/plugin/org.eclipse.mylyn.commons.repositories.ui/icons/eview16/Daos.gif" tooltip="" category="Mylyn" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_zWRhoJXBEfC_R_L1UfxOlw" elementId="org.eclipse.mylyn.commons.repositories.ui.navigator.Repositories" label="Team Repositories" iconURI="platform:/plugin/org.eclipse.mylyn.commons.repositories.ui/icons/eview16/daos.gif" tooltip="" category="Mylyn" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <persistedState key="originalCompatibilityViewClass" value="org.eclipse.mylyn.internal.commons.repositories.ui.RepositoriesView"/>
     <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.mylyn.commons.repositories.ui"/>
     <tags>View</tags>
@@ -1250,7 +1250,7 @@
     <tags>View</tags>
     <tags>categoryTag:Mylyn</tags>
   </descriptors>
-  <descriptors xmi:id="_zWSIsJXBEfC_R_L1UfxOlw" elementId="org.eclipse.mylyn.tasks.ui.views.repositories" label="Task Repositories" iconURI="platform:/plugin/org.eclipse.mylyn.tasks.ui/icons/eview16/Daos.svg" tooltip="" category="Mylyn" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_zWSIsJXBEfC_R_L1UfxOlw" elementId="org.eclipse.mylyn.tasks.ui.views.repositories" label="Task Repositories" iconURI="platform:/plugin/org.eclipse.mylyn.tasks.ui/icons/eview16/daos.svg" tooltip="" category="Mylyn" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <persistedState key="originalCompatibilityViewClass" value="org.eclipse.mylyn.internal.tasks.ui.views.TaskRepositoriesView"/>
     <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.mylyn.tasks.ui"/>
     <tags>View</tags>
@@ -1526,7 +1526,7 @@
   <commands xmi:id="_zJGoeZXBEfC_R_L1UfxOlw" elementId="org.eclipse.ui.edit.text.delete.line" commandName="Delete Line" description="Delete a line of text" category="_zJFaNZXBEfC_R_L1UfxOlw"/>
   <commands xmi:id="_zJGoepXBEfC_R_L1UfxOlw" elementId="org.eclipse.jdt.ui.edit.text.java.remove.block.comment" commandName="Remove Block Comment" description="Remove the block comment enclosing the selection" category="_zJFaTpXBEfC_R_L1UfxOlw"/>
   <commands xmi:id="_zJGoe5XBEfC_R_L1UfxOlw" elementId="org.eclipse.jdt.ui.edit.text.java.open.implementation" commandName="Open Implementation" description="Opens the Implementations of a method or a type in its hierarchy" category="_zJFaOJXBEfC_R_L1UfxOlw"/>
-  <commands xmi:id="_zJGofJXBEfC_R_L1UfxOlw" elementId="org.eclipse.jdt.junit.gotoTest" commandName="Referring Tests" description="Referring Tests" category="_zJFaR5XBEfC_R_L1UfxOlw"/>
+  <commands xmi:id="_zJGofJXBEfC_R_L1UfxOlw" elementId="org.eclipse.jdt.junit.gotoTest" commandName="Referring tests" description="Referring tests" category="_zJFaR5XBEfC_R_L1UfxOlw"/>
   <commands xmi:id="_zJGofZXBEfC_R_L1UfxOlw" elementId="org.eclipse.jdt.ui.edit.text.java.find.broken.nls.keys" commandName="Find Broken Externalized Strings" description="Finds undefined, duplicate and unused externalized string keys in property files" category="_zJFaTpXBEfC_R_L1UfxOlw"/>
   <commands xmi:id="_zJGofpXBEfC_R_L1UfxOlw" elementId="org.eclipse.eclemma.ui.openSessionExecutionData" commandName="Open Execution Data" category="_zJFaPZXBEfC_R_L1UfxOlw"/>
   <commands xmi:id="_zJGof5XBEfC_R_L1UfxOlw" elementId="org.eclipse.jdt.ui.commands.showElementInPackageView" commandName="Show Java Element in Package Explorer" description="Select Java element in the Package Explorer view" category="_zJFaOJXBEfC_R_L1UfxOlw">
@@ -1962,7 +1962,7 @@
   <commands xmi:id="_zJId3pXBEfC_R_L1UfxOlw" elementId="org.eclipse.ui.edit.text.shiftLeft" commandName="Shift Left" description="Shift a block of text to the left" category="_zJEME5XBEfC_R_L1UfxOlw"/>
   <commands xmi:id="_zJId35XBEfC_R_L1UfxOlw" elementId="org.eclipse.egit.ui.team.Push" commandName="Push..." category="_zJFaS5XBEfC_R_L1UfxOlw"/>
   <commands xmi:id="_zJId4JXBEfC_R_L1UfxOlw" elementId="org.eclipse.jdt.debug.ui.commands.AddClassPrepareBreakpoint" commandName="Add Class Load Breakpoint" description="Add a class load breakpoint" category="_zJFaSJXBEfC_R_L1UfxOlw"/>
-  <commands xmi:id="_zJId4ZXBEfC_R_L1UfxOlw" elementId="org.eclipse.egit.ui.RepositoriesCreateGroup" commandName="Create a Repository Group" description="Create a repository group for structuring Daos in the Git Repositories view" category="_zJFaS5XBEfC_R_L1UfxOlw"/>
+  <commands xmi:id="_zJId4ZXBEfC_R_L1UfxOlw" elementId="org.eclipse.egit.ui.RepositoriesCreateGroup" commandName="Create a Repository Group" description="Create a repository group for structuring daos in the Git Repositories view" category="_zJFaS5XBEfC_R_L1UfxOlw"/>
   <commands xmi:id="_zJId4pXBEfC_R_L1UfxOlw" elementId="org.eclipse.egit.ui.team.stash.drop" commandName="Delete Stashed Commit..." category="_zJFaS5XBEfC_R_L1UfxOlw"/>
   <commands xmi:id="_zJId45XBEfC_R_L1UfxOlw" elementId="org.eclipse.debug.ui.DebugPerspective" commandName="Debug" description="Open the debug perspective" category="_zJFaTJXBEfC_R_L1UfxOlw"/>
   <commands xmi:id="_zJId5JXBEfC_R_L1UfxOlw" elementId="org.eclipse.tips.ide.command.open" commandName="Tip of the Day" category="_zJFaUpXBEfC_R_L1UfxOlw"/>

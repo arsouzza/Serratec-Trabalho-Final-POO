@@ -5,7 +5,7 @@ import models.exceptions.DependenteException;
 
 import java.sql.SQLException;
 
-import Daos.DependenteDAO;
+import daos.DependenteDAO;
 import interfaces.IDependenteService;
 
 public class DependenteService implements IDependenteService{

@@ -6,7 +6,7 @@ import services.FuncionarioService;
 import java.sql.SQLException;
 import java.util.List;
 
-import Daos.FuncionarioDAO;
+import daos.FuncionarioDAO;
 
 public class FuncionarioController {
 

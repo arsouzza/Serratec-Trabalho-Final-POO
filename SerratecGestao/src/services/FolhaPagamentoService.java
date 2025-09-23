@@ -6,7 +6,7 @@ import models.Funcionario;
 import java.time.LocalDate;
 import java.util.UUID;
 
-import Daos.FolhaPagamentoDAO;
+import daos.FolhaPagamentoDAO;
 
 public class FolhaPagamentoService {
 

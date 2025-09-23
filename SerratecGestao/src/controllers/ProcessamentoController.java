@@ -15,9 +15,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import Daos.DependenteDAO;
-import Daos.FolhaPagamentoDAO;
-import Daos.FuncionarioDAO;
+import daos.DependenteDAO;
+import daos.FolhaPagamentoDAO;
+import daos.FuncionarioDAO;
 
 public class ProcessamentoController {
 

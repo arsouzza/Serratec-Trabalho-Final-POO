@@ -1,4 +1,4 @@
-package Daos;
+package daos;
 
 import configs.DatabaseConfig;
 import interfaces.IDependenteDAO;

@@ -4,7 +4,7 @@ import models.Funcionario;
 
 import java.sql.SQLException;
 
-import Daos.FuncionarioDAO;
+import daos.FuncionarioDAO;
 
 public class FuncionarioService {
 
